@@ -6,7 +6,7 @@
 yarn create next-app <NOME_APP>
 ```
 
-### Arquivo tailwind.config.ts
+### Arquivo `tailwind.config.ts`
 
 O único bloco obrigatório é o `content: [],`, onde ensina ao onde podem existir arquivos que contenham códigos pro tailwind interpretar.
 
