@@ -66,9 +66,65 @@ export default config;
 
 Neste bloco podemos definir tudo que definimos como padrão do projeto, inclusive criando os nossos novos.
 
----
+--- 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Psdeudo seletores
+
+Opçoes de selecionar somente a primeira , letra, ultimo elemento e assim por diante.
+
+NOTA: A propriedade flex por padrão, faz os elementos ficarem um ao lado do outro.
+
+## Botoes
+
+Podemos criar normalmente um botão usando as tag nutton e o estilo podemos definir no elemento como no exemplo:
+
+```tsx
+      <button className="bg-sky-500 px-4 py-2 rounded-md font-medium mt-4">
+        Sign in
+      </button>
+```
+
+![Sign In button picture](./md_assets/button_01.PNG)
+
+### Estados
+
+Podemos alterar os estados, usando este tipo especial de propriedade
+
+```tsx
+      <button disabled className="
+       bg-sky-500 px-4 py-2 rounded-md font-medium mt-4
+       enabled:hover:bg-sky-600
+       disabled:opacity-60 disabled:cursor-not-allowed
+       ">
+```
+
+Defimos o comportamento do estilo do botão caso habilitado, desabilitado, e como o elemento se comporta quando o mouse esta sobre ele.
+
+![Disabled](./md_assets/button_disabled.PNG)
+
+## Estilos
+
+Mobile First, o sistema é feito pensando em mobile por padrão, depois costumizamos para telas maiores.
+
+### Resposividade
+
+Para alterar por exemplo o estilo de um elemento, caso a tela mude de cor, podemos usar `sm:` e o nome da propriedade.
+
+```tsx
+<h1 className="
+        font-bold text-3xl flex items-center gap-3 
+        before:w-0.5 before:h-8 before:bg-sky-500
+        sm:text-5xl
+      ">Hello Tailwind</h1>
+```
+
+H1 em tela pequena.
+![tela pequena](./md_assets/tela_pequena.PNG)
+
+H1 em tela média.
+![tela media](./md_assets/tela_media.PNG)
 
 ## Getting Started
 
