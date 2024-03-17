@@ -1,4 +1,8 @@
+## Pré-requisitos
 
+Instalar no VS Code
+[PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## Criando um projeto novo
 
@@ -7,6 +11,8 @@ yarn create next-app <NOME_APP>
 ```
 
 ### Arquivo `tailwind.config.ts`
+
+### content: []
 
 O único bloco obrigatório é o `content: [],`, onde ensina ao onde podem existir arquivos que contenham códigos pro tailwind interpretar.
 
@@ -55,6 +61,10 @@ const config: Config = {
 };
 export default config;
 ```
+
+### theme: []
+
+Neste bloco podemos definir tudo que definimos como padrão do projeto, inclusive criando os nossos novos.
 
 ---
 
