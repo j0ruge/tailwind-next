@@ -126,6 +126,11 @@ H1 em tela pequena.
 H1 em tela média.
 ![tela media](./md_assets/tela_media.PNG)
 
+## Dark and Light Theme
+
+
+---
+
 ## Getting Started
 
 First, run the development server:

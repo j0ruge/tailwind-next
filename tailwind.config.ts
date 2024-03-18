@@ -7,7 +7,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        diego: '#8257e6'
+        rocket_purple: '#8257e6'
       },
       backgroundImage: {        
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
