@@ -128,6 +128,15 @@ H1 em tela média.
 
 ## Dark and Light Theme
 
+Simplesmente escolha na frente da propriedade a palavra `dark:`
+
+```css
+ dark:bg-slate-900 dark:text-slate-100
+```
+
+## Valores Arbitrários
+
+a
 
 ---
 
