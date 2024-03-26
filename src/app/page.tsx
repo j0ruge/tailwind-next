@@ -18,8 +18,7 @@ export default function Home() {
         <button disabled className="
         bg-sky-500 px-4 py-2 rounded-md font-medium mt-4
         hover:bg-sky-600
-        text-white
-        
+        text-white        
         dark:bg-sky-400 dark:text-sky-950
         ">
         Sign in

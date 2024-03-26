@@ -136,7 +136,93 @@ Simplesmente escolha na frente da propriedade a palavra `dark:`
 
 ## Valores Arbitrários
 
-a
+Não é recomendado fugirmos os padrões do tailwind, mas caso seja inevitável, isso pode ser feito com uma pequena alteração.
+
+Podemos usar `[]` no lugar da cor do tailwind por exemplo, o `dark:bg-sky-400` muda para `dark:bg-[blue]`  ou `dark:bg-[#8257e6]`
+
+ou ainda em um `max-w-2xl`, pode virar na precisão um `max-w-[700px]` diretamente no componente. 
+
+Mas o ideal neste casos é criar uma extensão do tema padrão alterando por adicionando um: 
+
+```css
+maxWidth:{
+  app: '700px'
+},
+```
+
+No config ficaria:
+
+```ts
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/**/*.tsx",
+  ],
+  theme: {
+    extend: {
+      maxWidth:{
+        app: '700px'
+      },
+      colors: {
+        rocket_purple: '#8257e6'
+      },
+      backgroundImage: {        
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
+```
+
+E no código passa a reconhecer.  `<div className="max-w-app">`
+
+## ESlint e Prettier
+
+A RocketSeat criou uma config de Eslint que pode ser instala como uma dependencia de desenvolvimento.
+
+`pnpm i @rocketseat/eslint-config -D`
+
+E ajustar a configuração do `.eslintrc.json` que já vem no Nextjs
+
+```json
+{
+  "extends": [
+    "@rocketseat/eslint-config/next",
+    "next/core-web-vitals"
+  ]
+}
+
+```
+
+Agora podemos instalar o plugin do Prettier para Tailwindcss
+
+`npm i prettier-plugin-tailwindcss -D`
+
+
+Criar na raiz do projeto `prettier.config.js` com o conteúdo:
+
+```js
+export default {
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
+```
+
+E recarregue o VS Code
+
+![reload_windows]('./md_assets/reload_window.png')
+
+No `settings.json`
+
+```json
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+```
 
 ---
 
