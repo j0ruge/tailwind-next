@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="min-h-screen 
+          grid grid-cols-app
+        ">
+          <aside>sidebar</aside>
+          <main>{children}</main>
+        </div>        
+      </body>
     </html>
   );
 }

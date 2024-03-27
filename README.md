@@ -224,6 +224,28 @@ No `settings.json`
   },
 ```
 
+## Estrutura de Layout
+
+No `layout.tsx` é configurado tudo que é fixo e não tem alteração independente da página que o usuário estiver acessando.
+
+Na parte de render o `{children}` é tudo que vai ser alterado
+
+começa coloando na div container `<div className="min-h-screen">` para pegar 100% da tela para altura mínima do conteúdo.
+
+para definir um grid específico, vamos usar o `tailwind.config.ts`
+
+```ts
+ theme: {
+    extend: {
+      gridTemplateColumns: {
+          app: '250px 1fr'
+      },
+```
+
+E usar na local correto e ajustamos para usar nesta posição
+
+`minmax(18rem, 20rem)`
+
 ---
 
 ## Getting Started
