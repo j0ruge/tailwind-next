@@ -181,6 +181,17 @@ export default config;
 
 E no código passa a reconhecer.  `<div className="max-w-app">`
 
+## Estrutura do Layout
+
+O layout da aplicação ficam no arquivo `src/layout.tsx` 
+
+`"px-4"`, no tailwind esse **px**, é de padding no eixo x
+
+Figma Ignite Tailwind - (https://www.figma.com/file/MU3H8HfTxX32ukt8ANpan7/Ignite-Tailwind?type=design&node-id=0-1&mode=design&t=PJUT6BZEgq2wRq5y-0)
+
+
+
+
 ## ESlint e Prettier
 
 A RocketSeat criou uma config de Eslint que pode ser instala como uma dependencia de desenvolvimento.
