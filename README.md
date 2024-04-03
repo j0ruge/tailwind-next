@@ -4,6 +4,17 @@ Instalar no VS Code
 [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
+## Figma
+
+[Figma](https://www.figma.com/file/MU3H8HfTxX32ukt8ANpan7/Ignite-Tailwind?type=design&node-id=0-1&mode=design&t=J6Yr8WVpahgLSPfo-0)
+
+
+## Tools
+
+https://transform.tools/
+
+Para fazer um svg virar um componente React
+
 ## Criando um projeto novo
 
 ```bash
