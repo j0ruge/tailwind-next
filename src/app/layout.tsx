@@ -21,8 +21,9 @@ export default function RootLayout({
         <div className="min-h-screen 
           grid grid-cols-app
         ">
-          <aside className="border-r border-zinc-200 px-5">sidebar</aside>
           <Sidebar />
+          <aside className="border-r border-zinc-200 px-5">sidebar</aside>
+          
           <main className="px-4 pb-12 pt-8">{children}</main>
         </div>        
       </body>
